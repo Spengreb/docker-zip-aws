@@ -12,3 +12,5 @@ steps:
     dockerfile: Dockerfile
     repo: spengreb/ubuntu-zip-aws
     tags: latest
+
+    
