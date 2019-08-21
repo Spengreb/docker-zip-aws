@@ -1,0 +1,14 @@
+kind: pipeline
+name: default
+
+steps:
+- name: docker
+  image: plugins/docker
+  settings:
+    username:
+      from_secret: docker_user
+    password:
+      from_secret: docker_password
+    dockerfile: Dockerfile
+    repo: spengreb/ubuntu-zip-aws
+    tags: latest
